@@ -99,7 +99,6 @@ namespace Project_1
         public static void DisplayDeck () {
             if(deck.Count == 0) {
                 Console.WriteLine("Deck is Empty!");
-                DisplayMenu(choice);
             } else {
                 int count = 0;
 
@@ -125,6 +124,7 @@ namespace Project_1
                     }
                 }
             }
+            DisplayMenu(choice);
         }
     }
 }

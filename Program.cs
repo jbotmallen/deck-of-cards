@@ -25,6 +25,7 @@ namespace Project_1
 
         public static int choice = -1;
         public static LinkedList<Card> deck = new LinkedList<Card>();    
+        public static LinkedList<Card> shuffledDeck = new LinkedList<Card>();
 
         static void Main(string[] args)
         {
@@ -52,7 +53,7 @@ namespace Project_1
                             CreateNewDeck();
                             break;
                         case 2:
-                            // ShuffleDeck();
+                            ShuffleDeck();
                             break;
                         case 3:
                             //DealDeck();
@@ -126,6 +127,28 @@ namespace Project_1
             }
             DisplayMenu(choice);
         }
+
+           public static void ShuffleDeck()
+        {
+            Random random = new Random();
+            if(deck.Count == 0){
+                Console.WriteLine("No cards on deck yet!");
+            }
+            while (deck.Count > 0)
+            {
+                int index = random.Next(deck.Count);
+                Card card = deck.ElementAt(index);
+                shuffledDeck.AddFirst(card);
+                deck.Remove(card);
+            }
+
+            foreach (Card card in shuffledDeck)
+            {
+                deck.AddLast(card);
+            }
+            DisplayMenu(choice);
+        }
+
     }
 }
 

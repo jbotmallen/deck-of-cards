@@ -13,3 +13,18 @@ D:\GitHub\Mobile Development\School Activities\Project-1\obj\Debug\net6.0\refint
 D:\GitHub\Mobile Development\School Activities\Project-1\obj\Debug\net6.0\Project-1.pdb
 D:\GitHub\Mobile Development\School Activities\Project-1\obj\Debug\net6.0\Project-1.genruntimeconfig.cache
 D:\GitHub\Mobile Development\School Activities\Project-1\obj\Debug\net6.0\ref\Project-1.dll
+D:\Documents\School\San Carlos\2\2nd\MobDev\deck-of-cards\bin\Debug\net6.0\Project-1.exe
+D:\Documents\School\San Carlos\2\2nd\MobDev\deck-of-cards\bin\Debug\net6.0\Project-1.deps.json
+D:\Documents\School\San Carlos\2\2nd\MobDev\deck-of-cards\bin\Debug\net6.0\Project-1.runtimeconfig.json
+D:\Documents\School\San Carlos\2\2nd\MobDev\deck-of-cards\bin\Debug\net6.0\Project-1.dll
+D:\Documents\School\San Carlos\2\2nd\MobDev\deck-of-cards\bin\Debug\net6.0\Project-1.pdb
+D:\Documents\School\San Carlos\2\2nd\MobDev\deck-of-cards\obj\Debug\net6.0\Project-1.GeneratedMSBuildEditorConfig.editorconfig
+D:\Documents\School\San Carlos\2\2nd\MobDev\deck-of-cards\obj\Debug\net6.0\Project-1.AssemblyInfoInputs.cache
+D:\Documents\School\San Carlos\2\2nd\MobDev\deck-of-cards\obj\Debug\net6.0\Project-1.AssemblyInfo.cs
+D:\Documents\School\San Carlos\2\2nd\MobDev\deck-of-cards\obj\Debug\net6.0\Project-1.csproj.CoreCompileInputs.cache
+D:\Documents\School\San Carlos\2\2nd\MobDev\deck-of-cards\obj\Debug\net6.0\Project-1.sourcelink.json
+D:\Documents\School\San Carlos\2\2nd\MobDev\deck-of-cards\obj\Debug\net6.0\Project-1.dll
+D:\Documents\School\San Carlos\2\2nd\MobDev\deck-of-cards\obj\Debug\net6.0\refint\Project-1.dll
+D:\Documents\School\San Carlos\2\2nd\MobDev\deck-of-cards\obj\Debug\net6.0\Project-1.pdb
+D:\Documents\School\San Carlos\2\2nd\MobDev\deck-of-cards\obj\Debug\net6.0\Project-1.genruntimeconfig.cache
+D:\Documents\School\San Carlos\2\2nd\MobDev\deck-of-cards\obj\Debug\net6.0\ref\Project-1.dll

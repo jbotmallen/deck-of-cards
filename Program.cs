@@ -56,7 +56,7 @@ namespace Project_1
                             ShuffleDeck();
                             break;
                         case 3:
-                            //DealDeck();
+                            DealDeck();
                             break;
                         case 4:
                             DisplayDeck();
@@ -93,7 +93,9 @@ namespace Project_1
                     deck.AddLast(newCard);
                 }
             }
-
+            Console.Write("Press any key to return to menu...");
+            Console.ReadKey(true);
+            Console.Clear();
             DisplayMenu(choice);
         }
 
@@ -125,6 +127,10 @@ namespace Project_1
                     }
                 }
             }
+            Console.WriteLine("Number of cards: " + deck.Count);
+            Console.Write("Press any key to return to menu...");
+            Console.ReadKey(true);
+            Console.Clear();
             DisplayMenu(choice);
         }
 
@@ -146,6 +152,64 @@ namespace Project_1
             {
                 deck.AddLast(card);
             }
+            Console.Write("Press any key to return to menu...");
+            Console.ReadKey(true);
+            Console.Clear();
+            DisplayMenu(choice);
+        }
+
+        public static void DealDeck()
+        {
+            int dealCount;
+            if (deck.Count > 0) {
+                Console.Write("How many cards would you like to deal? ");
+                dealCount = Convert.ToInt32(Console.ReadLine()); 
+                try {
+                    // for (int i = 0; i < dealCount && i < deck.Count; i++) {
+                        
+                    //     if (deck.Last != null) {
+                    //         var item = deck.Last.Value; 
+                    //         Console.WriteLine($"Suit: {item.Suit}; Rank: {GetRankName(item.Rank)}");
+                    //         deck.RemoveLast(); 
+                    //     } else {
+                    //         Console.WriteLine("Error: Deck is empty.");
+                    //         break;
+                    //     }
+                    // }
+
+                    while (dealCount > 0 && dealCount <= deck.Count) {
+                        var item = deck.First.Value;
+                        Console.Write("Suit: " + item.Suit + " ");
+                        switch(item.Rank) {
+                            case 1:
+                                Console.WriteLine("Suit: " + item.Suit + " " + "Rank: " + "Ace");
+                                break;
+                            case 11:
+                                Console.WriteLine("Suit: " + item.Suit + " " + "Rank: " + "Jack");
+                                break;
+                            case 12:
+                                Console.WriteLine("Suit: " + item.Suit + " " + "Rank: " + "Queen SLAAAAAYYY");
+                                break;
+                            case 13:
+                                Console.WriteLine("Suit: " + item.Suit + " " + "Rank: " + "King");
+                                break;
+                            default:
+                                Console.WriteLine("Suit: " + item.Suit + " " + "Rank: " + item.Rank);
+                                break;
+                        }
+                        deck.RemoveFirst();
+                        dealCount--;
+                    }
+
+                } catch (Exception ex) {
+                    Console.WriteLine("Cannot deal if deck has less cards than the asked number! " + ex.Message);
+                }
+            } else {
+                Console.WriteLine("The deck is empty!");
+            }
+            Console.Write("Press any key to return to menu...");
+            Console.ReadKey(true);
+            Console.Clear();
             DisplayMenu(choice);
         }
 

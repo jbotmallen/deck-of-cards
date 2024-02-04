@@ -112,7 +112,6 @@ namespace Project_1
 
             }
 
-
             Console.Write("Press any key to return to menu...");
             Console.ReadKey(true);
             Console.Clear();
@@ -203,6 +202,7 @@ namespace Project_1
                         Console.Write("Suit: " + item.Suit + " ");
                         switch (item.Rank)
                         {
+
                             case 1:
                                 Console.WriteLine("Suit: " + item.Suit + " " + "Rank: " + "Ace");
                                 break;
@@ -222,7 +222,6 @@ namespace Project_1
                         deck.RemoveFirst();
                         dealCount--;
                     }
-
                 }
                 else
                 {
@@ -231,6 +230,7 @@ namespace Project_1
             }
             else
             {
+
                 Console.WriteLine("The deck is empty!");
             }
             Console.Write("Press any key to return to menu...");
